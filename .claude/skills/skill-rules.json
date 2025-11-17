@@ -16,12 +16,19 @@
                     "skill rules",
                     "hook system",
                     "skill development",
-                    "skill-rules.json"
+                    "skill-rules.json",
+                    "스킬 생성",
+                    "스킬 추가",
+                    "스킬 개발",
+                    "훅 시스템",
+                    "스킬 트리거"
                 ],
                 "intentPatterns": [
                     "(how do|how does|explain).*?skill",
                     "(create|add|modify|build).*?skill",
-                    "skill.*?(work|trigger|activate|system)"
+                    "skill.*?(work|trigger|activate|system)",
+                    "(만들|생성|추가).*?스킬",
+                    "스킬.*?(작동|트리거|활성화)"
                 ]
             }
         },
@@ -46,14 +53,29 @@
                     "format code",
                     "code formatting",
                     "technical debt",
-                    "code cleanup"
+                    "code cleanup",
+                    "리팩토링",
+                    "리팩터",
+                    "코드 정리",
+                    "코드 개선",
+                    "임포트 수정",
+                    "임포트 경로",
+                    "코드 포맷팅",
+                    "주석 제거",
+                    "주석 정리",
+                    "기술 부채",
+                    "코드 미화",
+                    "가독성 개선"
                 ],
                 "intentPatterns": [
                     "(refactor|restructure|reorganize).*?(code|project|module)",
                     "(fix|repair|update).*?imports?",
                     "(improve|enhance).*?(readability|structure)",
                     "(remove|clean).*?comments",
-                    "(format|beautify).*?code"
+                    "(format|beautify).*?code",
+                    "(리팩토링|리팩터|개선|정리).*?(코드|프로젝트)",
+                    "(수정|고치).*?임포트",
+                    "(제거|삭제).*?주석"
                 ]
             }
         },
@@ -74,13 +96,26 @@
                     "security risk",
                     "credential exposure",
                     "hardcoded secrets",
-                    "dependency vulnerability"
+                    "dependency vulnerability",
+                    "보안 스캔",
+                    "보안 분석",
+                    "보안 감사",
+                    "취약점",
+                    "취약성",
+                    "보안 위험",
+                    "자격증명 노출",
+                    "하드코딩된 비밀",
+                    "의존성 취약점",
+                    "문제 예측"
                 ],
                 "intentPatterns": [
                     "(scan|analyze|check).*?security",
                     "(find|detect).*?vulnerabilit",
                     "(predict|prevent).*?issues?",
-                    "security.*?(audit|review|analysis)"
+                    "security.*?(audit|review|analysis)",
+                    "(스캔|분석|검사).*?보안",
+                    "(찾|탐지|발견).*?취약점",
+                    "보안.*?(감사|검토|분석)"
                 ]
             }
         },
@@ -101,13 +136,26 @@
                     "undo changes",
                     "rollback",
                     "git undo",
-                    "revert changes"
+                    "revert changes",
+                    "커밋",
+                    "깃 커밋",
+                    "스마트 커밋",
+                    "프로젝트 정리",
+                    "디버그 제거",
+                    "아티팩트 정리",
+                    "변경 취소",
+                    "롤백",
+                    "되돌리기",
+                    "변경 되돌리기"
                 ],
                 "intentPatterns": [
                     "(create|make|generate).*?commit",
                     "(clean|remove).*?(debug|artifacts|temporary)",
                     "(undo|rollback|revert).*?(changes|commit)",
-                    "git.*?(commit|cleanup|undo)"
+                    "git.*?(commit|cleanup|undo)",
+                    "(생성|만들).*?커밋",
+                    "(정리|제거).*?(디버그|아티팩트|임시)",
+                    "(취소|롤백|되돌리).*?(변경|커밋)"
                 ]
             }
         },
@@ -126,13 +174,25 @@
                     "quality check",
                     "performance review",
                     "architecture review",
-                    "multi-agent review"
+                    "multi-agent review",
+                    "코드 리뷰",
+                    "코드 검토",
+                    "테스트 실행",
+                    "테스트 분석",
+                    "품질 검사",
+                    "품질 체크",
+                    "성능 검토",
+                    "아키텍처 검토",
+                    "다중 에이전트 리뷰"
                 ],
                 "intentPatterns": [
                     "(review|analyze).*?code",
                     "(run|execute).*?tests?",
                     "(check|assess).*?quality",
-                    "test.*?(failure|analysis|debug)"
+                    "test.*?(failure|analysis|debug)",
+                    "(리뷰|검토|분석).*?코드",
+                    "(실행|돌리).*?테스트",
+                    "(검사|체크).*?품질"
                 ]
             }
         },
@@ -153,13 +213,26 @@
                     "convert todos",
                     "TODO comments",
                     "FIXME",
-                    "technical debt"
+                    "technical debt",
+                    "할일 찾기",
+                    "TODO 찾기",
+                    "할일 생성",
+                    "TODO 생성",
+                    "할일 수정",
+                    "TODO 수정",
+                    "할일 해결",
+                    "이슈로 변환",
+                    "기술 부채"
                 ],
                 "intentPatterns": [
                     "(find|locate|search).*?todos?",
                     "(create|add).*?todos?",
                     "(fix|resolve|implement).*?todos?",
-                    "(convert|transform).*?todos?.*?issues?"
+                    "(convert|transform).*?todos?.*?issues?",
+                    "(찾|검색|탐색).*?(할일|TODO)",
+                    "(생성|추가).*?(할일|TODO)",
+                    "(수정|해결).*?(할일|TODO)",
+                    "(변환|전환).*?(할일|TODO).*?이슈"
                 ]
             }
         },
@@ -179,13 +252,27 @@
                     "contributing",
                     "project patterns",
                     "boilerplate",
-                    "feature generation"
+                    "feature generation",
+                    "스캐폴딩",
+                    "스캐폴드",
+                    "기능 생성",
+                    "코드 구현",
+                    "기여 가이드라인",
+                    "컨트리뷰팅",
+                    "프로젝트 패턴",
+                    "보일러플레이트",
+                    "기능 구현",
+                    "템플릿 생성"
                 ],
                 "intentPatterns": [
                     "(scaffold|generate).*?(feature|component|module)",
                     "implement.*?(from|code|feature)",
                     "(understand|check).*?contribut",
-                    "(create|build).*?boilerplate"
+                    "(create|build).*?boilerplate",
+                    "(스캐폴드|생성).*?(기능|컴포넌트|모듈)",
+                    "구현.*?(코드|기능)",
+                    "(이해|확인).*?기여",
+                    "(만들|생성).*?(보일러플레이트|템플릿)"
                 ]
             }
         },
@@ -208,13 +295,27 @@
                     "codebase analysis",
                     "pattern recognition",
                     "README",
-                    "CHANGELOG"
+                    "CHANGELOG",
+                    "코드 이해",
+                    "아키텍처 분석",
+                    "코드 설명",
+                    "시니어처럼 설명",
+                    "문서화",
+                    "문서",
+                    "문서 업데이트",
+                    "프로젝트 구조",
+                    "코드베이스 분석",
+                    "패턴 인식"
                 ],
                 "intentPatterns": [
                     "(understand|analyze).*?(code|project|architecture)",
                     "explain.*?(code|function|module)",
                     "(update|manage|create).*?doc",
-                    "(what|how).*?(does|works).*?code"
+                    "(what|how).*?(does|works).*?code",
+                    "(이해|분석).*?(코드|프로젝트|아키텍처)",
+                    "설명.*?(코드|함수|모듈)",
+                    "(업데이트|관리|생성).*?문서",
+                    "(무엇|어떻게).*?(작동|동작).*?코드"
                 ]
             }
         },
@@ -233,12 +334,22 @@
                     "finish session",
                     "CLAUDE.md",
                     "session context",
-                    "preserve context"
+                    "preserve context",
+                    "세션 시작",
+                    "세션 종료",
+                    "세션 끝",
+                    "세션 컨텍스트",
+                    "컨텍스트 보존",
+                    "작업 시작",
+                    "작업 종료"
                 ],
                 "intentPatterns": [
                     "(start|begin|initialize).*?session",
                     "(end|finish|close).*?session",
-                    "(preserve|save).*?context"
+                    "(preserve|save).*?context",
+                    "(시작|시작하).*?세션",
+                    "(종료|끝내).*?세션",
+                    "(보존|저장).*?컨텍스트"
                 ]
             }
         }
