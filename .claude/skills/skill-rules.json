@@ -202,10 +202,13 @@
                     "explain like senior",
                     "senior explanation",
                     "documentation",
+                    "docs",
                     "update docs",
                     "project structure",
                     "codebase analysis",
-                    "pattern recognition"
+                    "pattern recognition",
+                    "README",
+                    "CHANGELOG"
                 ],
                 "intentPatterns": [
                     "(understand|analyze).*?(code|project|architecture)",
