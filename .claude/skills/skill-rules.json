@@ -24,6 +24,220 @@
                     "skill.*?(work|trigger|activate|system)"
                 ]
             }
+        },
+        "code-refactoring": {
+            "type": "domain",
+            "enforcement": "suggest",
+            "priority": "high",
+            "description": "Intelligent code refactoring, import fixing, and code beautification",
+            "promptTriggers": {
+                "keywords": [
+                    "refactor",
+                    "refactoring",
+                    "restructure",
+                    "fix imports",
+                    "broken imports",
+                    "import paths",
+                    "make it pretty",
+                    "beautify",
+                    "readability",
+                    "remove comments",
+                    "clean comments",
+                    "format code",
+                    "code formatting",
+                    "technical debt",
+                    "code cleanup"
+                ],
+                "intentPatterns": [
+                    "(refactor|restructure|reorganize).*?(code|project|module)",
+                    "(fix|repair|update).*?imports?",
+                    "(improve|enhance).*?(readability|structure)",
+                    "(remove|clean).*?comments",
+                    "(format|beautify).*?code"
+                ]
+            }
+        },
+        "security-analysis": {
+            "type": "domain",
+            "enforcement": "suggest",
+            "priority": "high",
+            "description": "Security vulnerability scanning and remediation workflows",
+            "promptTriggers": {
+                "keywords": [
+                    "security scan",
+                    "vulnerability",
+                    "vulnerabilities",
+                    "security audit",
+                    "security analysis",
+                    "predict issues",
+                    "proactive detection",
+                    "security risk",
+                    "credential exposure",
+                    "hardcoded secrets",
+                    "dependency vulnerability"
+                ],
+                "intentPatterns": [
+                    "(scan|analyze|check).*?security",
+                    "(find|detect).*?vulnerabilit",
+                    "(predict|prevent).*?issues?",
+                    "security.*?(audit|review|analysis)"
+                ]
+            }
+        },
+        "git-workflow": {
+            "type": "domain",
+            "enforcement": "suggest",
+            "priority": "high",
+            "description": "Smart git operations including commits, cleanup, and rollback",
+            "promptTriggers": {
+                "keywords": [
+                    "commit",
+                    "git commit",
+                    "smart commit",
+                    "conventional commit",
+                    "clean project",
+                    "remove debug",
+                    "cleanup artifacts",
+                    "undo changes",
+                    "rollback",
+                    "git undo",
+                    "revert changes"
+                ],
+                "intentPatterns": [
+                    "(create|make|generate).*?commit",
+                    "(clean|remove).*?(debug|artifacts|temporary)",
+                    "(undo|rollback|revert).*?(changes|commit)",
+                    "git.*?(commit|cleanup|undo)"
+                ]
+            }
+        },
+        "code-quality": {
+            "type": "domain",
+            "enforcement": "suggest",
+            "priority": "high",
+            "description": "Multi-dimensional code review and intelligent test execution",
+            "promptTriggers": {
+                "keywords": [
+                    "code review",
+                    "review code",
+                    "run tests",
+                    "test execution",
+                    "test analysis",
+                    "quality check",
+                    "performance review",
+                    "architecture review",
+                    "multi-agent review"
+                ],
+                "intentPatterns": [
+                    "(review|analyze).*?code",
+                    "(run|execute).*?tests?",
+                    "(check|assess).*?quality",
+                    "test.*?(failure|analysis|debug)"
+                ]
+            }
+        },
+        "todo-workflow": {
+            "type": "domain",
+            "enforcement": "suggest",
+            "priority": "high",
+            "description": "Complete TODO lifecycle from discovery to GitHub issue tracking",
+            "promptTriggers": {
+                "keywords": [
+                    "find todos",
+                    "locate todos",
+                    "create todos",
+                    "add todos",
+                    "fix todos",
+                    "resolve todos",
+                    "todos to issues",
+                    "convert todos",
+                    "TODO comments",
+                    "FIXME",
+                    "technical debt"
+                ],
+                "intentPatterns": [
+                    "(find|locate|search).*?todos?",
+                    "(create|add).*?todos?",
+                    "(fix|resolve|implement).*?todos?",
+                    "(convert|transform).*?todos?.*?issues?"
+                ]
+            }
+        },
+        "code-scaffolding": {
+            "type": "domain",
+            "enforcement": "suggest",
+            "priority": "high",
+            "description": "Feature scaffolding, code implementation, and contribution analysis",
+            "promptTriggers": {
+                "keywords": [
+                    "scaffold",
+                    "scaffolding",
+                    "generate feature",
+                    "implement code",
+                    "implement from",
+                    "contribution guidelines",
+                    "contributing",
+                    "project patterns",
+                    "boilerplate",
+                    "feature generation"
+                ],
+                "intentPatterns": [
+                    "(scaffold|generate).*?(feature|component|module)",
+                    "implement.*?(from|code|feature)",
+                    "(understand|check).*?contribut",
+                    "(create|build).*?boilerplate"
+                ]
+            }
+        },
+        "code-understanding": {
+            "type": "domain",
+            "enforcement": "suggest",
+            "priority": "high",
+            "description": "Deep codebase analysis, expert explanations, and documentation",
+            "promptTriggers": {
+                "keywords": [
+                    "understand code",
+                    "analyze architecture",
+                    "explain code",
+                    "explain like senior",
+                    "senior explanation",
+                    "documentation",
+                    "update docs",
+                    "project structure",
+                    "codebase analysis",
+                    "pattern recognition"
+                ],
+                "intentPatterns": [
+                    "(understand|analyze).*?(code|project|architecture)",
+                    "explain.*?(code|function|module)",
+                    "(update|manage|create).*?doc",
+                    "(what|how).*?(does|works).*?code"
+                ]
+            }
+        },
+        "session-management": {
+            "type": "domain",
+            "enforcement": "suggest",
+            "priority": "medium",
+            "description": "Development session tracking and context preservation",
+            "promptTriggers": {
+                "keywords": [
+                    "session start",
+                    "start session",
+                    "begin session",
+                    "session end",
+                    "end session",
+                    "finish session",
+                    "CLAUDE.md",
+                    "session context",
+                    "preserve context"
+                ],
+                "intentPatterns": [
+                    "(start|begin|initialize).*?session",
+                    "(end|finish|close).*?session",
+                    "(preserve|save).*?context"
+                ]
+            }
         }
     }
 }
